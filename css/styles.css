@@ -5,8 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
 }
+
 body {
     background-color: aliceblue;
     min-height: 100vh;
@@ -16,6 +16,13 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 4%;
+}
+
+main{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* barra de navegação Header */
@@ -48,6 +55,7 @@ nav ul {
 nav ul li {
     padding: 0 15px;
 }
+
 /* style da aparencia das opções do menu */
 nav ul li a {
     text-decoration: none;
@@ -56,6 +64,7 @@ nav ul li a {
     font-weight: bold;
     letter-spacing: 2px;
 }
+
 /* style do botão no nav */
 nav ul button {
     border: none;
@@ -68,86 +77,7 @@ nav ul button {
     letter-spacing: 2px;
     cursor: pointer;
 }
-main{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-/* style de artigo 'h1' */
-.text-bx {
-    width: 40%;
-}
-/* titulo do artigo */
-.text-bx h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-.text-bx h1 b {
-    color: blue;
-}
-/* texto do artigo*/
-.text-bx p {
-    color: #111;
-    font-weight: 400;
-    margin-top: 20px;
-}
-/* Style form e buttom*/
-.text-bx .input-bx {
-    margin: 20px 0;
-    display: flex;
-}
-.text-bx .input-bx input {
-    width: 60%;
-    display: block;
-    height: 50px;
-    padding: 10px;
-    border: groove;
-    border-radius: 10px;
-    outline: none;
-    color: blue;
-    font-size: 16px;
-}
-/* mudar cor texto padrão no form */
-.text-bx .input-bx input::placeholder {
-    color:  blue;
-}
-/* buttom */
-.text-bx .input-bx button {
-    outline: none;
-    border: none;
-    padding: 10px 20px;
-    background-color: aqua;
-    color: aliceblue;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    border: groove;
-    border-radius: 7px;
-    cursor: pointer;
-    font-size: 15px;
-}
-/* organiza icones redes sociais*/
-.media-sociais {
-    margin-top: 30px;
-}
-.media-sociais a {
-    text-decoration: none;
-}
-.media-sociais i {
-    font-size: 23px;
-    margin: 0 4px;
-    color: #ccc;
-    background-color: darkblue;
-    padding: 7px;
-    border-radius: 5px;
-}
-/* organização da imagem de apresentação */
-.img-bx {
-    width: 60%;    
-}
-.img-bx img {
-    width: 100%;    
-}
+
 @media (max-width:970px) {
     nav .menu-icon {
         display: block;
@@ -180,35 +110,8 @@ main{
         background-color: blue;
         font-size: 18px;
         margin: 10px;
-    }
+    }  
     main {
         flex-direction: column;
-    }
-    .text-bx, .img-bx {
-        width: 100%;
-        text-align: center;
-    }
-    .text-bx {
-        margin-bottom: 40px;
-    }
-    .text-bx .input-bx {
-        justify-content: center;
-    }    
-
+    }   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
