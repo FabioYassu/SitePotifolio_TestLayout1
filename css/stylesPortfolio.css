@@ -5,14 +5,13 @@
     gap: 2vw;
 }
 div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;    
-    width: 250px;
+    margin: 5px;        
+    width: 200px;
     flex-grow: 1;
   }
   
-  div.gallery:hover {
-    border: 1px solid #777;
+  div.gallery:hover {    
+    transform: scale(1.3);
   }
   
   div.gallery img {
