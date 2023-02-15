@@ -1,0 +1,84 @@
+body {
+    padding: 0;
+    margin: 0;    
+}
+
+form {
+    opacity: 0.8;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: gray;
+    width: 40vw;
+    max-width: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+h1 {
+   margin-bottom: 20px;
+   margin-left: 20px;
+   color: #66FFFF;
+   text-shadow: 5px 5px 5px black;
+}
+
+input {
+    width: 10vw;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;    
+    border: solid;
+    border-radius: 5px;
+}
+
+.enviar {
+    margin: 10px;
+    background-color: #66FFFF;
+    height: 40px;
+    width: 5vw;
+    min-width: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 30vw;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+/* form, label {
+    margin: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+} */
+
+textarea {
+    margin: 20px;
+}
+#fundo {
+    opacity: 0.8;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  
+  #modal {
+    width: 100px;
+    height: 100px;
+    left: 30%;
+    top: 50%;
+    margin: -250px 0 0 0;
+    position: fixed;    
+    z-index: 99;
+    display: none;
+  }

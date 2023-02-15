@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="styleSheet" type="text/css" href="css/styles.css" media="screen" />   
         <link rel="styleSheet" type="text/css" href="css/stylesSobre.css" media="screen" /> 
+        <link rel="styleSheet" type="text/css" href="css/stylesContato.css" media="screen" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <title>Site Responsivo</title>       
     </head>
@@ -21,7 +22,7 @@
                     <li><a href="portfolio.html">Portfólio</a> </li>
                     <li><a href="sobre.html">Sobre</a> </li>
                     <li><a href="#">Blog</a> </li>
-                    <li><a href="#">Contatos</a> </li>                    
+                    <li><a href="#" onclick="abrirModal() ;">Contatos</a> </li>                    
                     <!--button>algum lugar</button-->
                 </ul>
                 <div class="menu-icon">
@@ -30,9 +31,37 @@
             </nav>
 
             <main>
+
+                <div id="fundo"></div>
+            <div id="modal">
+                <form name="contato">
+                <h1>Contatos</h1>
+                <h3>fabio.yassu@gmail.com</h3><br>
+                <h3>linkedin.com/in/fabio-nakama-2202b0130/</h3><br>
+                <h2>Formulario abaixo encaminha para meu email</h2>
+                <input type="text" id="nomeId" placeholder="Nome" required="required" name="nome" />
+                <!-- <label for="nome">Nome</label> -->
+            
+                <input type="tel" id="foneId" placeholder="Digite seu numero" name="fone" />
+                <!-- <label for="fone">Fone</label> -->
+    
+                <input type="email" id="emailId" placeholder="Entre com seu e-mail" required="required" name="email" />
+                <!-- <label for="email">Email</label> -->
+                
+                <input type="text" id="assuntoId" placeholder="Qual assunto ?" required="required" name="assuntoId" />
+                <!-- <label for="email">Email</label> -->
+                
+                <textarea placeholder="Deixe sua opnião"></textarea>
+    
+                <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+            
+                </form>           
+            <a href="#" class="fechar" onclick="fecharModal();">fechar</a>
+            </div>
            
             </main>
         </div>   
+        <script src="js/float.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
