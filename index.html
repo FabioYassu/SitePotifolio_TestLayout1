@@ -11,9 +11,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <title>Site Responsivo</title>       
     </head>
-    <body>
-        <div class="container">
-          
+    <body>        
+        <div class="container">  
+        <!-- INICIO NAV BAR -->          
             <nav>         
                 <div class="logo">
                     <a href="index.html">Kitsune.dev</a>
@@ -22,15 +22,15 @@
                     <li><a href="index.html">Home</a> </li>
                     <li><a href="portfolio.html">Portfólio</a> </li>
                     <li><a href="sobre.html">Sobre</a> </li>
-                    <li><a href="#">Blog</a> </li>
-                    <li><a href="#" onclick="abrirModal() ;">Contatos</a> </li>                    
-                    <!--button>algum lugar</button-->
+                    <li><a href="blog.html">Blog</a> </li>
+                    <li><a href="#" onclick="abrirModal() ;">Contatos</a> </li>
                 </ul>  
                 <div class="menu-icon">
                     <img src="img/menu.png" />
                 </div>         
-            </nav>
-
+            </nav>        
+        <!-- FIM NAV BAR -->
+        <!-- INICIO CONTEUDO DA PAGINA -->
             <main>
                 <div class="text-bx">
                     <h1> Alice in wordeland <b> Illusion and Confusion </b></h1>
@@ -56,43 +56,51 @@
                     <img src="img/fox-geo3.png">
                 </div>
             </main>
-
-
-            <div id="fundo"></div>
-            <div id="modal">
-                <form name="contato">
-                <h1>Contatos</h1>
-                <h3>fabio.yassu@gmail.com</h3><br>
-                <h3>linkedin.com/in/fabio-nakama-2202b0130/</h3><br>
-                <h2>Formulario abaixo encaminha para meu email</h2>
-                <input type="text" id="nomeId" placeholder="Nome" required="required" name="nome" />
-                <!-- <label for="nome">Nome</label> -->
+        </div>         
             
-                <input type="tel" id="foneId" placeholder="Digite seu numero" name="fone" />
-                <!-- <label for="fone">Fone</label> -->
-    
-                <input type="email" id="emailId" placeholder="Entre com seu e-mail" required="required" name="email" />
-                <!-- <label for="email">Email</label> -->
-                
-                <input type="text" id="assuntoId" placeholder="Qual assunto ?" required="required" name="assuntoId" />
-                <!-- <label for="email">Email</label> -->
-                
-                <textarea placeholder="Deixe sua opnião"></textarea>
-    
-                <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
-            
-                </form>           
-            <a href="#" class="fechar" onclick="fecharModal();">fechar</a>
-            </div>
-           
-
-
-
-            <footer>
-                <a>Fabio Yassu</a>
-            </footer>
-        </div>   
         <script src="js/float.js"></script>
         <script src="js/main.js"></script>
     </body>
+    <footer>
+        <a>Fabio Yassu</a>
+    </footer>
+    <!-- FIM CONTEUDO CORPO DA PAGINA -->
+    <!-- INICIO FORMULARIO PARA MENU CONTATOS -->
+    <div id="fundo"></div>
+    <div id="modal">
+        <div class="container-form">
+            <form action="#"> 
+                <div class="user-details">
+                    <div class="title">CONTATO</div> 
+                    <div class="input-box">
+                        <span class="details">Nome</span>
+                        <input type="text" placeholder="Nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">E-mail</span>
+                        <input type="text" placeholder="e-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Telefone</span>
+                        <input type="text" placeholder="Telefone" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Assunto</span>
+                        <input type="text" placeholder="Assunto" required>
+                    </div> 
+                    <div class="msnarea">
+                        <textarea placeholder="Corpo do e-mail"></textarea>
+                    </div>   
+                </div>                                 
+                <div class="button">
+                    <input type="submit" value="Enviar">
+                </div>   
+            </form>                        
+        </div>
+        <a href="#" class="fechar" onclick="fecharModal();">fechar</a>
+    </div>   
+    <!-- FIM FORMULARIO PARA MENU CONTATOS -->                
 </html>
