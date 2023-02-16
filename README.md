@@ -1,9 +1,9 @@
-# SitePotifolio_TestLayout1
-![home](/img/home.png?raw=true "HomeScreen")
+# Aba Home
+![home](/docs/home.png?raw=true "HomeScreen")
 
-# SitePotifolio_TestLayout1
+# Aba Portfolio
 ![Portfolio](/docs/portfolio.png?raw=true "PortfolioScreen")
 
-# SitePotifolio_TestLayout1
-![Contato](/docs/contato.png.png?raw=true "ContatoScreen")
+# Aba Contato
+![Contato](/docs/contato.png?raw=true "ContatoScreen")
 
